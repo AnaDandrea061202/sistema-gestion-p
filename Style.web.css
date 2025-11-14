@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+body {
+    
+    
+    background-size: cover;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.contenedor-login {
+    background-image: url('image/fotito-ofi.jpeg');
+    background-color: rgba(255, 255, 255, 0.85); 
+    padding: 40px;
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    width: 350px; 
+    text-align: center;
+}
+
+
+.titulo-registro {
+    font-size: 15px; 
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+.titulo-linea-abajo {
+
+font-size: 15px;
+color: #333;
+ margin-bottom: 20px;
+ font-weight: normal;
+  text-align: left;
+}
+
+
+
+
+.barra-progreso {
+    display: flex;
+    margin-bottom: 30px;
+    height: 8px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.barra-progreso div {
+    flex-grow: 1; 
+    height: 100%;
+}
+
+
+.barra-progreso .verde { background-color: #5cb85c; }
+.barra-progreso .rojo { background-color: #d9534f; }
+.barra-progreso .amarillo { background-color: #f0ad4e; }
+.barra-progreso .azul { background-color: #428bca; }
+
+
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+    font-size: 16px;
+}
+
+
+.btn-ingresar {
+    width: 100%;
+    background-color: #3b73b5; 
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.btn-ingresar:hover {
+    background-color: #2a568a; 
+
+}
+.restaurar-contrasena {
+    text-align: right; 
+    display: block;
+    font-size: 14px;
+}
+
+.restaurar-contrasena a {
+    color: #428bca; 
+    text-decoration: none;
+}
+
+.restaurar-contrasena a:hover {
+    text-decoration: underline;
+}
+
+
+/*
+ * ----------------------------------------
+ * ESTILOS GENERALES Y LAYOUT
+ * ----------------------------------------
+ */
+body {
+    font-family: Roboto, Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f5f7; 
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+
+
+/*
+ * ----------------------------------------
+ * ESTILOS GENERALES 
+ * ----------------------------------------
+ */
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+   
+    background-color: #f8f8f8; 
+}
+
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+}
+
+/*
+ * ----------------------------------------
+ *  (Panel Lateral)
+ * ----------------------------------------
+ */
+.sidebar {
+    width: 250px;
+    background-color: #3f51b5; 
+    color: white;
+    padding-top: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-header {
+    padding: 0 20px 30px 20px;
+    font-size: 1.5em;
+    font-weight: 400; 
+}
+
+.menu-section-title {
+    color: #aeb4e7; 
+    font-size: 0.7em;
+    text-transform: uppercase;
+    padding: 10px 20px 5px 20px;
+    font-weight: 500;
+}
+
+.menu-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    font-size: 0.95em;
+    font-weight: 500;
+    transition: background-color 0.1s;
+}
+
+
+.menu-item.active {
+  
+    background-color: #4963e6;
+    border-left: 3px solid white; 
+    padding-left: 17px; 
+}
+
+
+.menu-item.active-menu-header {
+    background-color: #4963e6;
+}
+
+.menu-item:hover {
+    background-color: #4963e6; 
+}
+
+.menu-item-icon {
+    width: 12px; 
+    height: 12px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+    text-align: center;
+    line-height: 12px;
+    font-size: 0.7em;
+    color: transparent; 
+}
+
+
+.menu-item.active .menu-item-icon {
+    background-color: white;
+    border-color: white;
+}
+
+.sidebar-footer {
+    margin-top: auto; 
+    padding: 20px;
+    text-align: center;
+}
+
+.collapse-button {
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/*
+ * ----------------------------------------
+ * ÁREA DE CONTENIDO
+ * ----------------------------------------
+ */
+.content-area {
+    flex-grow: 1;
+    padding: 30px 40px;
+}
+
+.page-top-header {
+   
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    color: #333;
+    line-height: 1.2;
+    font-weight: 300; 
+}
+
+/*
+ * ----------------------------------------
+ * TARJETA PRINCIPAL (Formulario)
+ * ----------------------------------------
+ */
+.main-card {
+    background-color: white;
+    padding: 0; 
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-title {
+   
+    padding: 25px 30px 15px 30px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.three-dots {
+    font-weight: bold;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #888;
+}
+
+/*
+ * ----------------------------------------
+ * FORMULARIO
+ * ----------------------------------------
+ */
+form {
+    padding: 0 30px 30px 30px; 
+}
+
+.form-section-title {
+    font-size: 0.9em;
+    font-weight: 500;
+    color: #3f51b5; 
+    margin-top: 25px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #3f51b5;
+    width: 250px; 
+}
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+.form-label {
+    width: 150px; 
+    color: #555;
+}
+
+.form-input-container {
+    flex-grow: 1;
+    max-width: 300px; 
+}
+
+
+.form-input, .form-select {
+    width: 100%;
+    padding: 8px 0; 
+    border: none;
+    border-bottom: 1px solid #ccc; 
+    box-sizing: border-box;
+    background-color: transparent; 
+    font-size: 1em;
+    outline: none; 
+}
+
+
+.form-input[type="password"] {
+    letter-spacing: 2px;
+    font-family: monospace; 
+}
+
+.cancel-link {
+    color: #3f51b5;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 500;
+}
