@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+/* Importar una fuente moderna (opcional) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6; /* Fondo gris claro suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor principal del formulario */
+.registro-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    width: 100%;
+    max-width: 450px;
+    box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo {
+    color: #007bff; /* Azul primario para la identidad de marca */
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #6c757d;
+    font-size: 0.95em;
+}
+
+/* Formulario */
+.formulario-registro {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Grupos de Input */
+.grupo-input {
+    margin-bottom: 20px;
+}
+
+.grupo-input label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 700;
+    color: #495057;
+}
+
+.grupo-input input,
+.grupo-input select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 1em;
+    box-sizing: border-box; /* Asegura que el padding no aumente el ancho total */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.grupo-input input:focus,
+.grupo-input select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Botón de Registro */
+.btn-registro {
+    background-color: #28a745; /* Verde para acción de "Registro/Crear" */
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1em;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    margin-top: 10px;
+}
+
+.btn-registro:hover {
+    background-color: #218838;
+}
+
+.btn-registro:active {
+    transform: scale(0.99);
+}
+
+/* Enlace de Login */
+.enlace-login {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.9em;
+}
+
+.enlace-login a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.enlace-login a:hover {
+    text-decoration: underline;
+}

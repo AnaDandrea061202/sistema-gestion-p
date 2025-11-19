@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrar Banco</title>
+    <link rel="stylesheet" href="Style.bancos.css">
+</head>
+<body>
+<div class="card">
+    <h2 class="card-header">Registro de Nuevo Banco Cliente</h2>
+    <form id="formRegistroBanco" method="POST" clase="formualario-banco">
+        
+        <div class="form-group">
+            <label for="nombre">Nombre Completo del Banco:</label>
+            <input type="text" id="nombre" name="nombre" required 
+                   placeholder="Ej: Banco Consorcio Global C.A.">
+            <span id="error-nombre" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="codigo_banco">Código Bancario (SWIFT/Nacional):</label>
+            <input type="text" id="codigo_banco" name="codigo_banco" required 
+                   maxlength="10" placeholder="Ej: BCSG">
+            <span id="error-codigo" class="error-message"></span>
+        </div>
+
+        <div class="form-group">
+            <label for="rfc_nit_otro">Identificación Fiscal (RFC/NIT):</label>
+            <input type="text" id="rfc_nit_otro" name="rfc_nit_otro" 
+                   maxlength="20" placeholder="Opcional">
+        </div>
+
+        <div class="form-group checkbox-group">
+            <input type="checkbox" id="esta_activo" name="esta_activo" checked>
+            <label for="esta_activo">El Banco está activo para generar Tickets</label>
+        </div>
+        
+        <button type="submit" id="btnGuardar">
+            <i class="fas fa-save"></i> Registrar Banco
+        </button>
+        
+    </form>
+</div>
+
+    <script src="CrearBancos.js"></script>
+
+
+</body>
+</html>

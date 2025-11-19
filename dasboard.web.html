@@ -21,13 +21,13 @@
         <span class="menu-item-icon">O</span>
         Panel
     </div>
-    <div class="menu-item" onclick="setActive(this)">
+    <div class="menu-item" onclick="setActive(this); window.open('CrearBancos.html');">
+    <span class="menu-item-icon">O</span>
+   Registrar Banco
+</div>
+     <div class="menu-item" onclick="setActive(this); window.open('CrearTickest.html');">
         <span class="menu-item-icon">O</span>
-        Crear Tickets
-    </div>
-    <div class="menu-item" onclick="setActive(this)">
-        <span class="menu-item-icon">O</span>
-        Registrar Banco
+        Crear Tickest
     </div>
     <div class="menu-item" onclick="setActive(this)">
         <span class="menu-item-icon">O</span>
@@ -76,7 +76,7 @@
                     <div class="form-group">
                         <label for="contrasena" class="form-label">Contraseña</label>
                         <div class="form-input-container">
-                            <input type="password" id="contrasena" class="form-input" value="12345678" readonly>
+                            <input type="password" id="contrasena" class="form-input" value="12345678">
                         </div>
                     </div>
                     
@@ -98,7 +98,7 @@
                     <div class="form-group">
                         <label for="telefono" class="form-label">Teléfono</label>
                         <div class="form-input-container">
-                            <input type="tel" id="telefono" class="form-input" placeholder="DD/M/AAAAA">
+                            <input type="tel" id="telefono" class="form-input" placeholder="">
                         </div>
                     </div>
 

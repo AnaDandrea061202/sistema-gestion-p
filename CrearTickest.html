@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generar Ticket</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Style.Tickest.css">
+    
+</head>
+<body>
+
+    <div class="card">
+        <h2 class="card-header">Generación de Nuevo Ticket de Programación</h2>
+        <form id="formCrearTicket" method="POST" action="procesar_ticket.php">
+            
+            <div class="form-group">
+                <label for="id_banco">Seleccione el Banco Cliente:</label>
+                <select id="id_banco" name="id_banco" required>
+                    <option value="">-- Seleccionar Banco --</option>
+                    <option value="1">Banco Consorcio A</option>
+                    <option value="2">Banco Capital B</option>
+                    <option value="3" disabled>Banco Inactivo C (Ejemplo)</option>
+                </select>
+                <span id="error-banco" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="id_usuario_cargador">Usuario que carga el Ticket:</label>
+                <select id="id_usuario_cargador" name="id_usuario_cargador" required>
+                    <option value="">-- Seleccionar Usuario --</option>
+                    <option value="101">Juan Pérez (Banco Consorcio A)</option>
+                </select>
+                <span id="error-usuario" class="error-message"></span>
+            </div>
+
+            <div class="form-group">
+                <label for="descripcion_solicitud">Detalles de Puntos de Venta (POS) a programar:</label>
+                <textarea id="descripcion_solicitud" name="descripcion_solicitud" rows="7" required 
+                          placeholder="Por favor, sea lo más detallado posible. Incluya la cantidad de POS, números de serie, direcciones de instalación y cualquier instrucción especial."></textarea>
+                <span id="error-descripcion" class="error-message"></span>
+            </div>
+
+            <div class="form-group ans-info-group">
+                <label><i class="fas fa-clock"></i> Acuerdo de Nivel de Servicio (ANS) Estándar:</label>
+                <p>El tiempo de respuesta estándar para este tipo de solicitud es de **48 horas hábiles** a partir de la creación del ticket.</p>
+                
+                <label><i class="fas fa-calendar-alt"></i> Fecha y Hora Límite Calculada (ANS):</label>
+                <input type="text" id="fecha_limite_ans" name="fecha_limite_ans" readonly class="calculated-field"
+                       placeholder="Calculando fecha límite...">
+            </div>
+            
+            <button type="submit" id="btnGenerarTicket">
+                <i class="fas fa-paper-plane"></i> Generar Ticket
+            </button>
+            
+        </form>
+    </div>
+
+    <script>
+        // Pega el JavaScript de validación y carga de usuarios aquí
+    </script>
+</body>
+</html>

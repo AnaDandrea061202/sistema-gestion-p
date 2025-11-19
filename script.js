@@ -26,3 +26,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
         firstItem.classList.add('active');
     }
 });
+
+
+
+
+
+

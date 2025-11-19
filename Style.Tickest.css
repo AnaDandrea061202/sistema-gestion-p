@@ -1,0 +1,147 @@
+/* -- General Reset & Base Styles -- */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    background-color: #eef2f6; /* Un fondo más suave */
+    padding: 30px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* -- Card Container -- */
+.card {
+    max-width: 700px; /* Un poco más ancho para mejor distribución */
+    margin: 25px auto;
+    background-color: #ffffff;
+    border-radius: 12px; /* Bordes más redondeados */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); /* Sombra más profunda y suave */
+    overflow: hidden; /* Asegura que el contenido respete los bordes */
+}
+
+.card-header {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Gradiente atractivo */
+    color: white;
+    padding: 20px 30px;
+    font-size: 1.8em; /* Título más grande */
+    font-weight: 600;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Separador sutil */
+}
+
+/* -- Form Group Styling -- */
+.form-group {
+    padding: 15px 30px; /* Más padding interno */
+    margin-bottom: 10px; /* Espacio entre grupos */
+    position: relative; /* Para posicionar mensajes de error */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600; /* Negrita más marcada */
+    color: #4a4a4a;
+    font-size: 0.95em;
+}
+
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px; /* Más padding para una mejor experiencia táctil/visual */
+    border: 1px solid #dcdcdc; /* Borde más sutil */
+    border-radius: 8px; /* Bordes redondeados */
+    box-sizing: border-box;
+    font-size: 1em;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+    background-color: #fcfcfc; /* Fondo ligeramente diferente para inputs */
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2); /* Sombra de enfoque azul */
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* -- Error Messages -- */
+.error-message {
+    color: #dc3545; /* Rojo de error */
+    font-size: 0.8em; /* Texto más pequeño */
+    margin-top: 5px;
+    display: block;
+    position: absolute; /* Para que no afecte el layout */
+    bottom: -15px; /* Posicionado debajo del input */
+    left: 30px;
+}
+
+/* -- ANS Info Group -- */
+.ans-info-group {
+    background-color: #e9f7ff; 
+    border-left: 5px solid #007bff; /* Borde izquierdo destacado */
+    padding: 20px 30px;
+    margin: 20px 0; /* Más espacio */
+    border-radius: 8px;
+    color: #0056b3;
+}
+
+.ans-info-group p {
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.ans-info-group label {
+    color: #004085;
+    font-size: 1em;
+    margin-bottom: 5px;
+}
+
+.calculated-field {
+    background-color: #e2eaf0; /* Fondo gris-azul */
+    font-weight: bold;
+    color: #333;
+    border: 1px dashed #a8cde0; /* Borde punteado para indicar que no es editable */
+}
+
+/* -- Button Styling -- */
+button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(45deg, #28a745 0%, #218838 100%); /* Gradiente verde */
+    color: white;
+    padding: 18px 25px; /* Más grande */
+    border: none;
+    border-radius: 0 0 12px 12px; /* Coincide con el card */
+    cursor: pointer;
+    font-size: 1.2em; /* Texto más grande */
+    font-weight: 600;
+    transition: all 0.3s ease; /* Transición para hover */
+    display: flex; /* Para centrar el icono y texto */
+    align-items: center;
+    justify-content: center;
+    gap: 10px; /* Espacio entre icono y texto */
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(45deg, #218838 0%, #1e7e34 100%);
+    box-shadow: 0 8px 15px rgba(40, 167, 69, 0.3); /* Sombra al pasar el ratón */
+    transform: translateY(-2px); /* Pequeño levantamiento */
+}
+
+/* -- Responsive adjustments -- */
+@media (max-width: 768px) {
+    .card {
+        margin: 15px;
+    }
+    .card-header {
+        font-size: 1.5em;
+        padding: 15px 20px;
+    }
+    .form-group {
+        padding: 10px 20px;
+    }
+    button[type="submit"] {
+        font-size: 1em;
+        padding: 15px 20px;
+    }
+}

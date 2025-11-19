@@ -1,0 +1,90 @@
+/* Estilos Generales y Contenedor */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7f9;
+    padding: 20px;
+}
+
+.card {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff; /* Color principal del Consorcio */
+    color: white;
+    padding: 15px;
+    font-size: 1.5em;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Estilos de los Grupos de Formulario */
+.form-group {
+    padding: 0 20px 15px 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+/* Estilos para Mensajes de Error */
+.error-message {
+    color: #dc3545; /* Rojo para errores */
+    font-size: 0.85em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Estilos para Checkbox */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+/* Estilos del Botón */
+button[type="submit"] {
+    width: 100%;
+    background-color: #28a745; /* Verde para acción de guardar */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 0 0 8px 8px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}

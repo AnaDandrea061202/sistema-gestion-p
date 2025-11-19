@@ -1,37 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Plataforma de Consorcio</title>
-    <link rel="stylesheet" href="Style.web.css">
+    <title>Plataforma de Consorcio</title>
+    <link rel="stylesheet" href="Style.web.css">
 </head>
 <body>
-    <div class="contenedor-logo">
-        
-    </div>
+   <div class="logo-superior">
+        <img src="image/LOGO-EMPRESA.png" alt="Credicard Logo">
+    </div>
 
-    <div class="contenedor-login">
-        
-        <h1 class="titulo-registro">REGISTRO DE </h1>
-        <h1 class="titulo-linea-abajo"> PROGRAMACIONES - CONSORCIO</h1>
-        
-        <div class="barra-progreso">
-            <div class="verde"></div>
-            <div class="rojo"></div>
-            <div class="amarillo"></div>
-            <div class="azul"></div>
-        </div>
-        
-        <form>
-            <input type="email" placeholder="Couran10.ce@gmail.com" value="Couran10.ce@gmail.com">
-            <input type="password" placeholder="Contraseña •••••••" value="••••••••">
+    <div class="contenedor-login">
+        
+        <h1 class="titulo-registro">REGISTRO DE </h1>
+        <h1 class="titulo-linea-abajo"> PROGRAMACIONES - CONSORCIO</h1>
+        
+        <div class="barra-progreso">
+            <div class="verde"></div>
+            <div class="rojo"></div>
+            <div class="amarillo"></div>
+            <div class="azul"></div>
+        </div>
+        
+                <form id="loginForm" action="" method="POST"> 
+            
+            <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+            
+            <input type="password" id="password" name="password" placeholder="Contraseña">
+            
+            <button type="submit" class="btn-ingresar">INGRESAR</button>
             
-            <button type="submit" class="btn-ingresar">INGRESAR</button>
-            
-            <div class="restaurar-contrasena">
-                <a href="#">Restaurar contraseña</a>
-            </div>
-        </form>
-    </div>
+            <div id="mensajeLogin" style="color: red; padding: 5px; margin-top: 10px; text-align: center; background-color: #ffe0e0; border: 1px solid #f00; border-radius: 4px; display: none;"></div>
 
+            <div class="enlaces-inferiores">
+    <a href="resgistrarse.html" class="registro">Registrarse</a> 
+    <a href="#" class="restaurar">Restaurar contraseña</a> 
+</div>
+        </form>
+    </div>
+    
+    <script src="logueo.js"></script>
 </body>
 </html>
