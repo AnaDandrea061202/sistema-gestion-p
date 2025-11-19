@@ -1,11 +1,11 @@
 // logueo.js
 
 // ⭐ DATOS FIJOS PARA LOGIN INSTANTÁNEO ⭐
-const EMAIL_CORRECTO = 'prueba@ok.com';
+const EMAIL_CORRECTO = 'carlos@gmail.com';
 const CLAVE_CORRECTA = '12345678';
 const DASHBOARD_URL = './dasboard.web.html'; // URL de destino
 
-const loginForm = document.getElementById('loginForm'); 
+const loginForm = document.getElementById('login-form'); 
 
 if (loginForm) {
     loginForm.addEventListener('submit', function(event) {
